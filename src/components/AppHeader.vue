@@ -79,7 +79,7 @@ header {
     div {
         display: flex;
         justify-content: space-between;
-        width: 1500px;
+        width: 1300px;
         margin: 0 auto;
         padding: 20px 0;
 
@@ -94,12 +94,12 @@ header {
                     font-weight: 600;
                     text-transform: uppercase;
                     color: black;
-                    padding: 65px 0;
+                    padding: 60px 0;
 
                     &:hover,
                     &:focus {
                         color: #0C7CEC;
-                        border-bottom: 2px solid currentColor;
+                        border-bottom: 5px solid currentColor;
                     }
                 }
             }
