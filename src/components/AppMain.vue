@@ -79,7 +79,7 @@ section {
 
         .column {
             margin-right: 30px;
-            padding: 20px 0;
+            padding: 30px 0;
 
             h3 {
                 margin: 10px 0;
