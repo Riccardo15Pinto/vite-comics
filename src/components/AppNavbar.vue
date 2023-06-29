@@ -59,10 +59,6 @@ export default {
 }
 </script>
 
-<template>
-    <h1>
-        ciao
-    </h1>
-</template>
+<template></template>
 
-<style></style>
+<style lang="scss"></style>
