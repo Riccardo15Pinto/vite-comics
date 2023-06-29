@@ -44,7 +44,7 @@ export default {
     <footer>
         <div class="container">
             <a href="#">SING-UP NOW!</a>
-            <div>
+            <div class="social">
                 <h2>FOLLOW US</h2>
                 <ul>
                     <li v-for="social in socials" :key="social.name_social">
@@ -60,4 +60,28 @@ export default {
     </footer>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+footer {
+    background-color: #303030;
+    height: 150px;
+
+    .container {
+        width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .social {
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+</style>
