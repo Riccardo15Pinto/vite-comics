@@ -4,29 +4,29 @@ export default {
         return {
             socials: [
                 {
-                    pic: 'footer-facebook.png',
-                    name: 'facebook',
-                    current: false
+                    picture: 'footer-facebook.png',
+                    name_social: 'facebook',
+                    isValid: false
                 },
                 {
-                    pic: 'footer-periscope.png',
-                    name: 'periscope',
-                    current: false
+                    picture: 'footer-periscope.png',
+                    name_social: 'periscope',
+                    isValid: false
                 },
                 {
-                    pic: 'footer-pinterest.png',
-                    name: 'pinterest',
-                    current: false
+                    picture: 'footer-pinterest.png',
+                    name_social: 'pinterest',
+                    isValid: false
                 },
                 {
-                    pic: 'footer-twitter.png',
-                    name: 'twitter',
-                    current: false
+                    picture: 'footer-twitter.png',
+                    name_social: 'twitter',
+                    isValid: false
                 },
                 {
-                    pic: 'footer-youtube.png',
-                    name: 'youtube',
-                    current: false
+                    picture: 'footer-youtube.png',
+                    name_social: 'youtube',
+                    isValid: false
                 }
             ]
         }
@@ -40,6 +40,24 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <footer>
+        <div class="container">
+            <a href="#">SING-UP NOW!</a>
+            <div>
+                <h2>FOLLOW US</h2>
+                <ul>
+                    <li v-for="social in socials" :key="social.name_social">
+                        <a href="#">
+                            <figure>
+                                <img :src="getImagePath(social.picture)" :alt="social.name_social">
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</template>
 
 <style lang="scss" scoped></style>
