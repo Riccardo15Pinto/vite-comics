@@ -43,7 +43,7 @@ export default {
 <template>
     <footer>
         <div class="container">
-            <a href="#">SING-UP NOW!</a>
+            <a href="#" class="button">SING-UP NOW!</a>
             <div class="social">
                 <h2>FOLLOW US</h2>
                 <ul>
@@ -64,6 +64,8 @@ export default {
 footer {
     background-color: #303030;
     height: 150px;
+    display: flex;
+    align-items: center;
 
     .container {
         width: 1300px;
@@ -72,14 +74,29 @@ footer {
         align-items: center;
         justify-content: space-between;
 
+        .button {
+            padding: 20px 30px;
+            border: 2px solid #1182F9;
+            color: white;
+            font-weight: 600;
+        }
+
         .social {
             display: flex;
             align-items: center;
+
+            h2 {
+                color: #1182F9;
+            }
 
             ul {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
+                li {
+                    margin-left: 20px;
+                }
             }
         }
     }
