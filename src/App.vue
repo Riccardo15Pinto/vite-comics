@@ -1,8 +1,8 @@
 <script>
-import AppNavbar from './components/AppNavbar.vue';
+import AppHeader from './components/AppHeader.vue';
 export default {
   components: {
-    AppNavbar
+    AppHeader
   },
   data() {
     return {
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <AppNavbar />
+  <AppHeader />
 </template>
 
 <style lang="scss">
