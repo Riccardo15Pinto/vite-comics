@@ -74,4 +74,36 @@ export default {
     </header>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+header {
+    div {
+        display: flex;
+        justify-content: space-between;
+        width: 1500px;
+        margin: 0 auto;
+        padding: 20px 0;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                margin-left: 20px;
+
+                a {
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: black;
+                    padding: 65px 0;
+
+                    &:hover,
+                    &:focus {
+                        color: #0C7CEC;
+                        border-bottom: 2px solid currentColor;
+                    }
+                }
+            }
+        }
+    }
+}
+</style>
