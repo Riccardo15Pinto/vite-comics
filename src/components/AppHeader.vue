@@ -96,7 +96,7 @@ header {
                     font-weight: 600;
                     text-transform: uppercase;
                     color: black;
-                    padding: 60px 0;
+                    padding: 62px 0;
 
                     &:hover,
                     &:focus {
