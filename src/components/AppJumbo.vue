@@ -1,6 +1,7 @@
 <script>
 import ComicCard from './ComicCard.vue'
 export default {
+    components: { ComicCard },
     data() {
         return {
             images: [
@@ -32,7 +33,7 @@ export default {
             ]
         }
     },
-    promps: {
+    props: {
         comics: 'Array',
     },
     methods: {
@@ -41,7 +42,6 @@ export default {
             return url.href
         }
     },
-    components: { ComicCard }
 }
 </script>
 
@@ -52,9 +52,9 @@ export default {
         </div>
         <div class="bottom-jumbo">
             <div class="container-card">
-                <ComicCard v-for="comic in comics" :card=comics :thumb="comic" :price="comic" :series="comic"
-                    :key="comic.series" />
+                <ComicCard v-for=" comic in comics" :comic="comic" :key="comic.series" />
             </div>
+            <a href="#" class="button">LOAD MORE</a>
         </div>
     </section>
     <section class="info-merch">
@@ -86,6 +86,9 @@ export default {
             display: inline-block;
             text-transform: uppercase;
             color: white;
+            position: relative;
+            top: 94%;
+            left: 16%;
         }
     }
 
@@ -93,6 +96,7 @@ export default {
         background-color: #1C1C1C;
         padding: 40px 0;
         color: white;
+        text-align: center;
 
         .container-card {
             margin: 0 auto;
@@ -102,7 +106,17 @@ export default {
 
             .card {
                 flex-basis: calc(100% / 6);
+                text-align: left;
             }
+        }
+
+        .button {
+            padding: 10px 50px;
+            background-color: #0282F9;
+            color: white;
+            display: inline-block;
+            margin: 20px;
+            text-transform: uppercase;
         }
     }
 }
