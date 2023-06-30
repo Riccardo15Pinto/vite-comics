@@ -94,6 +94,8 @@ main {
 
             li {
                 margin: 5px 0;
+
+
             }
 
             h3 a {
@@ -102,6 +104,10 @@ main {
 
             li a {
                 color: #959595;
+
+                &:hover {
+                    color: white;
+                }
             }
         }
     }

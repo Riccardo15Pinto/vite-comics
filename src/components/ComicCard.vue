@@ -25,8 +25,18 @@ export default {
 .card {
     padding: 20px;
 
+    figure {
+        background-color: black;
+    }
+
+
     img {
         height: 300px;
+
+        &:hover {
+            opacity: 0.3;
+        }
+
     }
 }
 </style>
