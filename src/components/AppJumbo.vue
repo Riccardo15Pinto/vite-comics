@@ -143,6 +143,8 @@ export default {
 
                 figure {
                     width: 50px;
+
+
                 }
 
                 span {
