@@ -1,4 +1,5 @@
 <script>
+import ComicCard from './ComicCard.vue'
 export default {
     data() {
         return {
@@ -31,19 +32,22 @@ export default {
             ]
         }
     },
+    promps: {
+        comics: 'Array',
+    },
     methods: {
         getImagePath(target) {
             const url = new URL(`../assets/img/${target}`, import.meta.url)
             return url.href
         }
-    }
+    },
+    components: { ComicCard }
 }
 </script>
 
 <template>
     <section class="empty-content">
         <div>
-            <h2>-- Content goes here -- </h2>
         </div>
     </section>
     <section class="info-merch">
