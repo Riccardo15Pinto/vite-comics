@@ -2,6 +2,9 @@
 import AppJumbo from '../components/AppJumbo.vue';
 export default {
     components: { AppJumbo },
+    props: {
+        comics: 'Array',
+    },
     data() {
         return {
 
@@ -12,7 +15,7 @@ export default {
 
 <template>
     <main>
-        <AppJumbo />
+        <AppJumbo :comics="comics" />
 
         <nav>
             <div class="column">
