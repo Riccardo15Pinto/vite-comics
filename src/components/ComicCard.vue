@@ -7,8 +7,8 @@ export default {
     },
     promps: {
         card: {
-            thumb,
-            price,
+            thumb: 'String',
+            price: 'String',
         }
     }
 }
