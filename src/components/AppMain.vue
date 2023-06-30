@@ -75,7 +75,6 @@ main {
     background-image: url('../assets/img/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(100vh - 300px);
 
     nav {
         background-image: url(../assets/img/dc-logo-bg.png);
