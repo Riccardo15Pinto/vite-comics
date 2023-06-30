@@ -14,8 +14,8 @@ export default {
 </script>
 
 <template>
+    <AppJumbo :comics="comics" />
     <main>
-        <AppJumbo :comics="comics" />
 
         <nav>
             <div class="column">
